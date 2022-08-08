@@ -4,5 +4,5 @@ function woodcound(chare,table,bad){
     var badnumber=bad*10;
     return charenumber+tablenumber+badnumber;
 }
-var totalnumber=woodcound(1,1,2);
+var totalnumber=woodcound(1,0,2);
 console.log(totalnumber);
