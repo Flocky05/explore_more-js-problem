@@ -7,7 +7,7 @@ const phones=[
         size:'6.7 inches',
         os:'iOS 15',
         memory:'128GB 6GB RAM',
-        main_camera:'12 MP',
+        main_camera:'19 MP',
         sound:'Yes, with stereo speakers',
         price:22000
     },
@@ -33,7 +33,7 @@ const phones=[
             size:'6.7 inches',
             os:'iOS 15',
             memory:'128GB 6GB RAM',
-            main_camera:'12 MP',
+            main_camera:'17 MP',
             sound:'Yes, with stereo speakers',
             price:30000
         },
@@ -46,24 +46,37 @@ const phones=[
             size:'6.7 inches',
             os:'iOS 15',
             memory:'128GB 6GB RAM',
-            main_camera:'12 MP',
+            main_camera:'22 MP',
             sound:'Yes, with stereo speakers',
             price:13000
         }
         
 ];
 
-function cheapestphone(phones){
+// function cheapestphone(phones){
     
-    let cheapest =phones[0];
+//     let cheapest =phones[0];
+//     for(let i=0;i<phones.length;i++){
+//         const phone=phones[i];
+//         if(phone.price<cheapest.price){
+//             cheapest=phone;
+//         }
+//     }
+//     return cheapest;
+// }
+
+//  let myselction=cheapestphone(phones);
+//  console.log(myselction);
+
+function higestcamera(phones){
+    let highest=phones[0];
     for(let i=0;i<phones.length;i++){
-        const phone=phones[i];
-        if(phone.price<cheapest.price){
-            cheapest=phone;
+        let phone=phones[i];
+        if(phone.main_camera>highest.main_camera){
+            phone=highest;
         }
     }
-    return cheapest;
+    return phone;
 }
-
- let myselction=cheapestphone(phones);
- console.log(myselction);
+let veiw=cheapestphone(phones);
+console.log(veiw);
